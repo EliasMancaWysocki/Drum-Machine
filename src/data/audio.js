@@ -1,15 +1,16 @@
-export const audio = {
-  bankOne: [{
+export const bankOne = [{
     keyCode: 81,
     keyTrigger: 'Q',
     id: 'Heater-1',
     url: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3'
-  }, {
+  },
+  {
     keyCode: 87,
     keyTrigger: 'W',
     id: 'Heater-2',
     url: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3'
-  }, {
+  },
+  {
     keyCode: 69,
     keyTrigger: 'E',
     id: 'Heater-3',
@@ -44,10 +45,9 @@ export const audio = {
     keyTrigger: 'C',
     id: 'Closed-HH',
     url: 'https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3'
-  },
-],
+  }];
 
-  bankTwo: [{
+export const bankTwo = [{
   keyCode: 81,
   keyTrigger: 'Q',
   id: 'Chord-1',
@@ -93,4 +93,3 @@ export const audio = {
   id: 'Snare',
   url: 'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3'
   }]
-}

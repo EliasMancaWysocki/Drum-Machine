@@ -1,17 +1,41 @@
-.drum-pad {
+.active {
+  width: 100px;
+  height: 100px;
   display: flex;
-  flex: 1 1;
   justify-content: center;
   align-items: center;
   background-color: #282828;
   border-radius: 20px;
   color: #000;
   border: 1px solid #20A5A5;
-  margin: 5px;
+  margin: 20px;
   cursor: pointer;
   user-select: none;
+  box-shadow: #000 3px 3px 5px;
 }
 
-.drum-pad:active {
+.active:active {
   background-color: #20A5A5;
+  box-shadow: 0 0 0;
+  transform: translateY(4px);
+}
+
+.inactive {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+  border-radius: 20px;
+  color: #000;
+  margin: 20px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: #000 3px 3px 5px;
+}
+
+.inactive:active {
+  box-shadow: 0 0 0;
+  transform: translateY(4px);
 }

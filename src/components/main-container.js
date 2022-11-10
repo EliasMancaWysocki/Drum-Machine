@@ -1,10 +1,12 @@
 import '../stylesheets/main-container.scss';
-import { Display } from './display';
+import { Controls } from './controls';
+import { PadBank } from './pad-bank';
  
 export function Container() {
   return (
     <div id='drum-machine' className='main-container'>
-      <Display />
+      <PadBank />
+      <Controls />
     </div>
 
   )

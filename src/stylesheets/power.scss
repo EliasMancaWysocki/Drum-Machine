@@ -1,37 +1,58 @@
-:root {
-  --color-green: #00a878;
-  --color-red: #fe5e41;
-  --color-button: #fdffff;
-  --color-black: #000;
-}
-.switch-button {
-  display: flex;
-}
-.switch-button .switch-button__checkbox {
-  display: none;
-}
-.switch-button .switch-button__label {
-  background-color: var(--color-red);
-  width: 70px;
-  height: 35px;
-  border-radius: 20px;
-  display: flex;
+.switch {
   position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
-.switch-button .switch-button__label:before {
-  transition: .2s;
-  display: block;
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
   position: absolute;
-  width: 35px;
-  height: 35px;
-  background-color: var(--color-button);
-  content: url('https://css.gg/log-off.css');
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #282828;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #20A5A5;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #20A5A5;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
   border-radius: 50%;
-  box-shadow: inset 0px 0px 0px 1px var(--color-black);
-}
-.switch-button .switch-button__checkbox:checked + .switch-button__label {
-  background-color: var(--color-green);
-}
-.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
-  transform: translateX(2rem);
 }

@@ -1,8 +1,10 @@
 .main-container {
-  width: 700px;
+  width: 800px;
   height: 500px;
   background-color: #3f3f3f;
   border-radius: 20px;
   outline: 3px solid #20A5A5;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }

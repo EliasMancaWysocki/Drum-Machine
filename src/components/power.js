@@ -1,12 +1,12 @@
 import '../stylesheets/power.scss';
 
 export function Power() {
-  return(
+  return (
     <>
-      <div class="switch-button">
-        <input type="checkbox" name="switch-button" id="switch-label" className="switch-button__checkbox"/>
-        <label for="switch-label" className="switch-button__label"></label>
-    </div>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
     </>
   )
 }
